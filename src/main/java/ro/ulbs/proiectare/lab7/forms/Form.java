@@ -22,7 +22,7 @@ public class Form {
         return "This form has the color " + color;
     }
 
-    public static float getInstanceCount (){
+    public static int getInstanceCount (){
         return counter;
     }
 

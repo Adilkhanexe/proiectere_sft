@@ -39,9 +39,9 @@ public class Main {
         studenti.add(new Student("Maria", "Grupa 1"));
         studenti.add(new Student("Ioan", "Grupa 1"));
 
-        studenti = imparteInDouaFormatii(studenti, "TI 211_1", "TI 211_2");
+        studenti = imparteInDouaFormatii(studenti, "TI 21_1", "TI 21_2");
 
-        System.out.println("\n7.6.3 Students after split:");
+        System.out.println("\n7.6.3 Students dupa split:");
         for (Student s : studenti) {
             System.out.println(s.getName() + " - " + s.getFormation());
         }

@@ -25,7 +25,7 @@ public class Triangle extends Form{
         if (obj instanceof Triangle) {
             Triangle t = (Triangle) obj;
             if (super.equals(t)) { //reutilizare equals din clasa parinte
-                return t.base == t.base && t.height == t.height;
+                return this.base == t.base && this.height == t.height;
             }
         }
         return false;
