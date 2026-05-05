@@ -1,0 +1,4 @@
+ID: 1025, Nume: Andrei Popa, Grupa: ISM141/2, Medie: 8.7, Bursa: 725.5
+ID: 1024, Nume: Ioan Mihalcea, Grupa: ISM141/1, Medie: 9.8, Bursa: 801.1
+ID: 1026, Nume: Anamaria Prodan, Grupa: TI131/1, Medie: 8.9, Bursa: 745.5
+ID: 1029, Nume: Bianca Popescu, Grupa: TI131/1, Medie: 9.1, Bursa: 780.8
