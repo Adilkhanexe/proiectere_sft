@@ -19,25 +19,25 @@ public class SampleDataCreator {
 
             // Header
             Row header = sheet.createRow(0);
-            header.createCell(0).setCellValue("Nume");
-            header.createCell(1).setCellValue("Prenume");
-            header.createCell(2).setCellValue("Grupa");
-            header.createCell(3).setCellValue("Nota1");
-            header.createCell(4).setCellValue("Nota2");
-            header.createCell(5).setCellValue("Nota3");
+            header.createCell(0).setCellValue("Nr Crt");
+            header.createCell(1).setCellValue("Nume");
+            header.createCell(2).setCellValue("Prenume");
+            header.createCell(3).setCellValue("Nota 1");
+            header.createCell(4).setCellValue("Nota 2");
+            header.createCell(5).setCellValue("Nota 3");
 
             // Date
             Object[][] data = {
-                    {"Popescu", "Ion", "ISM141/1", 8.5, 9.0, 7.5},
-                    {"Ionescu", "Maria", "ISM141/2", 9.0, 8.5, 9.5},
-                    {"Georgescu", "Andrei", "TI131/1", 7.0, 6.5, 8.0},
-                    {"Marinescu", "Elena", "TI131/2", 10.0, 9.5, 9.0},
-                    {"Vasilescu", "Dan", "ISM141/1", 6.0, 7.0, 5.5}
+                    {1, "Popa", "Andrei", 7.0, 8.0, 9.0},
+                    {2, "Vecerdea", "Bianca", 7.0, 8.0, 7.0},
+                    {3, "Prodan", "Anamaria", 6.0, 9.0, 9.0},
+                    {4, "Dumitrescu", "Paul", 9.0, 6.0, 6.0},
+                    {5, "Ionescu", "Mihai", 8.0, 8.0, 9.0}
             };
 
             for (int i = 0; i < data.length; i++) {
                 Row row = sheet.createRow(i + 1);
-                row.createCell(0).setCellValue((String) data[i][0]);
+                row.createCell(0).setCellValue((Integer) data[i][0]);
                 row.createCell(1).setCellValue((String) data[i][1]);
                 row.createCell(2).setCellValue((String) data[i][2]);
                 row.createCell(3).setCellValue((Double) data[i][3]);
