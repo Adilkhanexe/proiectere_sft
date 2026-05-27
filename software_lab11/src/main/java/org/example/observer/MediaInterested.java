@@ -1,4 +1,4 @@
-package org.example;
+package org.example.observer;
 
 public class MediaInterested implements Observer {
     private String name;

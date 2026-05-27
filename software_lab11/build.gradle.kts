@@ -10,6 +10,7 @@ repositories {
 }
 
 dependencies {
+    implementation("org.apache.poi:poi-ooxml:5.2.5")
     testImplementation(platform("org.junit:junit-bom:5.10.0"))
     testImplementation("org.junit.jupiter:junit-jupiter")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
@@ -17,4 +18,14 @@ dependencies {
 
 tasks.test {
     useJUnitPlatform()
+}
+
+tasks.register<JavaExec>("runDecorator") {
+    mainClass.set("org.example.decorator.AplicatieCuDecorator")
+    classpath = sourceSets["main"].runtimeClasspath
+}
+
+tasks.register<JavaExec>("runObserver") {
+    mainClass.set("org.example.observer.ObserverPatternDemo")
+    classpath = sourceSets["main"].runtimeClasspath
 }

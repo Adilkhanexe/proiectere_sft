@@ -41,3 +41,7 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+# Generated outputs
+studentiStrategyExcel.xlsx
+studentiStrategyText.txt
